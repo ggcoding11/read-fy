@@ -9,7 +9,7 @@ public class WebClientConfig {
     @Bean
     public WebClient webClient(){
         return WebClient.builder()
-                .baseUrl("https://openlibrary.org/api/books")
+                .baseUrl("https://openlibrary.org")
                 .defaultHeader("Accept","application/json")
                 .build();
     }
